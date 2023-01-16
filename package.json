@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/koromerzhin/template-angular#readme",
   "dependencies": {
-    "koromerzhin-dependencies": "^1.3.0"
+    "korojscommands": "^1.2.7"
   }
 }
