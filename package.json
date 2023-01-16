@@ -1,5 +1,5 @@
 {
-  "name": "@koromerzhin/template-angular",
+  "name": "@hackariens/angular",
   "version": "1.0.0",
   "description": "Templates pour la création d'un nouveau projet angular",
   "scripts": {
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koromerzhin/template-angular.git"
+    "url": "git+https://github.com/hackariens/angular.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/koromerzhin/template-angular/issues"
+    "url": "https://github.com/hackariens/angular/issues"
   },
-  "homepage": "https://github.com/koromerzhin/template-angular#readme",
+  "homepage": "https://github.com/hackariens/angular#readme",
   "dependencies": {
     "korojscommands": "^1.2.7"
   }
