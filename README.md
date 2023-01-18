@@ -42,6 +42,12 @@ cd angular
 npm install
 ```
 
+## Launch
+
+``` sh
+npm run exec
+```
+
 ## Author
 
 👤 **koromerzhin**
