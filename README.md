@@ -36,6 +36,10 @@ git clone --recurse-submodules git@github.com:hackariens/angular.git angular
 cd angular
 ```
 
+## Environnment
+
+Edit .env with .env.example
+
 ## Install
 
 ``` sh
