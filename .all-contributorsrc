@@ -1,6 +1,6 @@
 {
-  "projectName": "template-angular",
-  "projectOwner": "koromerzhin",
+  "projectName": "angular",
+  "projectOwner": "hackariens",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -10,7 +10,7 @@
   "commit": true,
   "contributorsPerLine": 7,
   "commitConvention": "gitmoji",
-  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#-contributors)",
+  "badgeTemplate": "![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)",
   "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
   "contributors": [
     {
@@ -25,17 +25,12 @@
     {
       "login": "renovate[bot]",
       "name": "renovate[bot]",
-      "avatar_url": "https://avatars1.githubusercontent.com/in/2740?v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
       "profile": "https://github.com/apps/renovate",
       "contributions": [
         "bug",
         "code",
-        "infra",
-        "maintenance",
-        "platform",
-        "review",
-        "security",
-        "tool"
+        "maintenance"
       ]
     },
     {
@@ -46,12 +41,7 @@
       "contributions": [
         "bug",
         "code",
-        "infra",
-        "maintenance",
-        "platform",
-        "review",
-        "security",
-        "tool"
+        "maintenance"
       ]
     }
   ]
