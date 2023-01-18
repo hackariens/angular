@@ -1,8 +1,4 @@
 version: "3.4"
-networks:
-  net:
-    driver: overlay
-    attachable: true
 services:
   www:
     image: node:15.14.0
@@ -10,6 +6,4 @@ services:
     command: >
       sh -c "npm install -g @angular/cli@11.2.18 && npm install && npm install && npm run start"
     volumes:
-      - ${PWD}/apps:/app
-    networks:
-      - net
+      - ${PWD}/apps:/app:delegated

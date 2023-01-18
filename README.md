@@ -3,21 +3,20 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 ![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/hackariens/angular/graphs/commit-activity)
-![Continuous Integration](https://github.com/hackariens/angular/workflows/Continuous%20Integration/badge.svg?branch=develop)
+![Continuous Integration](https://github.com/hackariens/angular/workflows/ci/badge.svg?branch=develop)
 
 > Templates pour la création d'un nouveau projet angular
 
 ## 🏠 [Homepage](https://github.com/hackariens/angular#readme)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)]
+![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Need
 
 Software:
 
-- make
 - npm
 - docker
 - repository koromerzhin/lampy
@@ -33,27 +32,14 @@ Hosts:
 ## Download
 
 ```sh
-git clone git@github.com:hackariens/angular.git template-angular
-cd template-angular
-git submodule update --init
+git clone --recurse-submodules git@github.com:hackariens/angular.git angular
+cd angular
 ```
 
 ## Install
 
 ``` sh
-make install
-```
-
-## after git add
-
-``` sh
-make git check
-```
-
-## help
-
-``` sh
-make help
+npm install
 ```
 
 ## Author
@@ -93,11 +79,11 @@ Thanks goes to these wonderful people
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/koromerzhin"><img src="https://avatars0.githubusercontent.com/u/308012?v=4" width="100px;" alt=""/><br /><sub><b>Le TOULLEC Martial</b></sub></a></td>
-    <td align="center"><a href="https://github.com/apps/renovate"><img src="https://avatars1.githubusercontent.com/in/2740?v=4" width="100px;" alt=""/><br /><sub><b>renovate[bot]</b></sub></a></td>
-    <td align="center"><a href="https://github.com/apps/dependabot"><img src="https://avatars.githubusercontent.com/in/29110?v=4" width="100px;" alt=""/><br /><sub><b>dependabot[bot]</b></sub></a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/koromerzhin"><img src="https://avatars0.githubusercontent.com/u/308012?v=4" width="100px;" alt=""/><br /><sub><b>Le TOULLEC Martial</b></sub></a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
