@@ -39,6 +39,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: chrome
+          wait-on: "https://angular.traefik.me"
       - name: Archive screenshots
         uses: actions/upload-artifact@v3
         with:
