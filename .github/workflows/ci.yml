@@ -31,6 +31,8 @@ jobs:
         run: npm run docker:ls
       - name: linter readme.md
         run: npm run lint:markdown
+      - name: 'docker ls'
+        run: npm run docker:ls
       - name: test url
         run: ping https://angular.traefik.me
       - name: Cypress run
