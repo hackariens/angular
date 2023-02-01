@@ -37,6 +37,8 @@ jobs:
         run: npm run lint:markdown
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          browser: chrome
       - name: Archive screenshots
         uses: actions/upload-artifact@v3
         with:
