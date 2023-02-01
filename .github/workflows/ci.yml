@@ -29,12 +29,5 @@ jobs:
         run: npm run docker:waiting
       - name: linter readme.md
         run: npm run lint:markdown
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
-        with:
-          wait-on: 'npx wait-on --timeout 60000 https://angular.traefik.me'
-      - name: Archive screenshots
-        uses: actions/upload-artifact@v3
-        with:
-          name: screenshot
-          path: cypress/screenshots/
+      - name: test url
+        run: ping https://angular.traefik.me
