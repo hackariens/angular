@@ -2,11 +2,8 @@ name: ci
 on: [push]
 jobs:
   tests:
-    runs-on: ${{ matrix.operating-system }}
-    strategy:
-      fail-fast: false
-      matrix:
-        operating-system: [ubuntu-22.04]
+    runs-on: ubuntu-22.04
+    container: cypress/included:3.8.3
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -36,10 +33,7 @@ jobs:
       - name: linter readme.md
         run: npm run lint:markdown
       - name: Cypress run
-        uses: cypress-io/github-action@v5
-        with:
-          browser: chrome
-          wait-on: "https://angular.traefik.me"
+        run: cypress run
       - name: Archive screenshots
         uses: actions/upload-artifact@v3
         with:
