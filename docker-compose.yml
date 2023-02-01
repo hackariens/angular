@@ -1,9 +1,9 @@
 version: "3.4"
 services:
   www:
-    image: node:15.14.0
+    image: node:16.19.0
     working_dir: /app
     command: >
-      sh -c "npm install -g @angular/cli@11.2.18 && npm install && npm install && npm run start"
+      sh -c "npm install -g @angular/cli && ng serve --host 0.0.0.0 --disable-host-check"
     volumes:
       - ${PWD}/apps:/app:delegated
