@@ -32,7 +32,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          build: npx cypress info
+          CYPRESS_baseUrl: http://web.localhost:3000
       - name: Archive screenshots
         uses: actions/upload-artifact@v3
         with:
