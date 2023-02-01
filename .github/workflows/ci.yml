@@ -31,7 +31,9 @@ jobs:
       - name: linter readme.md
         run: npm run lint:markdown
       - name: Cypress run
-        run: cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          build: npx cypress info
       - name: Archive screenshots
         uses: actions/upload-artifact@v3
         with:
