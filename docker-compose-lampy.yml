@@ -4,6 +4,12 @@ networks:
     external: true
 services:
   www:
+    image: node:20.3.1
+    working_dir: /app
+    command: >
+      sh -c "npm install -g @angular/cli && ng serve --host 0.0.0.0 --disable-host-check"
+    volumes:
+      - ${PWD}/apps:/app:delegated
     networks:
       - proxylampy
     deploy:
