@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   www:
-    image: node:20.3.1
+    image: node:20.19.5
     working_dir: /app
     command: >
       sh -c "npm install -g @angular/cli && ng serve --host 0.0.0.0 --disable-host-check"
