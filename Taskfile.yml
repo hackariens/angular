@@ -78,7 +78,7 @@ tasks:
     cmds:
     - task: docker:stack:check:containers:ready
       vars:
-        CONTAINERS: "phpfpm"
+        CONTAINERS: "www"
         STACK_NAME: "{{.STACK_NAME}}"
 
   angular:ls:
