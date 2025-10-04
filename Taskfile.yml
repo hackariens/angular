@@ -92,7 +92,8 @@ tasks:
   create:apps:
     desc: "Crée une nouvelle application Angular dans le dossier apps"
     cmds:
-    - npm install -g @angular/cli && ng new apps
+    - docker run --rm -v $(pwd)/install:/var/www -w /var/www node:22.12.0 ./launch.sh
+    - cp -r install/apps .
 
   angular:exec:
     desc: "Exécute une commande dans un conteneur en cours d'exécution"
@@ -102,3 +103,11 @@ tasks:
     - task: angular:deploy
     - task: angular:waiting
     - task: angular:ls
+
+  angular:bash:
+    desc: "Ouvre un shell bash dans le conteneur www"
+    cmds:
+    - task: docker:stack:shell
+      vars:
+        STACK_NAME: "angular"
+        SERVICE_NAME: "www"
