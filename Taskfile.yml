@@ -16,12 +16,8 @@ vars:
   PROJECT_NAME: '{{.PROJECT_NAME | default "angular"}}'
   PROJECT_VERSION: '1.0.0'
   ENVIRONMENT: '{{.ENVIRONMENT | default "development"}}'
-  SWARM_DEFAULT_ADDR_POOL: '{{.IPSWARM | default "10.20.0.0/16"}}'
-  SWARM_ADVERTISE_ADDR: '{{.ADVERTISEADDR | default "192.168.1.46"}}'
   STACK_NAME: '{{.STACK | default "angular"}}'
-  FOLDERSQL: '{{.FOLDERSQL | default "database_init"}}'
-  FILESQL: '{{.FILESQL | default "dump.sql"}}'
-  FOLDERLAMPY: '{{.FOLDERLAMPY | default "angular"}}'
+  FOLDERLAMPY: '{{.FOLDERLAMPY | default "lampy"}}'
   DOCKERCOMPOSEFILE: '{{.DOCKERCOMPOSEFILE | default "docker-compose.yml"}}'
 
 tasks:
