@@ -92,8 +92,8 @@ tasks:
   angular:exec:
     desc: "Exécute une commande dans un conteneur en cours d'exécution"
     cmds:
-    - task: create:apps
     - task: angular:getpull-image
+    - task: create:apps
     - task: angular:deploy
     - task: angular:waiting
     - task: angular:ls
