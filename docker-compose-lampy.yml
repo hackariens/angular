@@ -18,4 +18,4 @@ services:
         - "traefik.http.routers.angular.rule=Host(`angular.traefik.me`)"
         - "traefik.http.routers.angular-tls.tls.domains[0].main=angular.traefik.me"
         - "traefik.http.routers.angular.tls=true"
-        - "traefik.http.services.angular.loadbalancer.server.port=4200"
+        - "traefik.http.services.angular.loadbalancer.server.port=80"

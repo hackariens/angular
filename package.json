@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Templates pour la création d'un nouveau projet angular",
   "scripts": {
-    "create:apps": "npm install -g @angular/cli && ng new apps",
     "lint:markdown": "markdownlint README.md"
   },
   "repository": {
