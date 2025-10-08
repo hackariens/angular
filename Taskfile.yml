@@ -42,6 +42,7 @@ tasks:
   help:
     desc: "Affiche l'aide détaillée"
     aliases: [ h ]
+    silent: true
     cmds:
     - task: default
 
