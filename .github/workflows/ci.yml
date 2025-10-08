@@ -38,6 +38,13 @@ jobs:
           repository: koromerzhin/lampy
           ref: 'v4.1'
           path: lampy
+
+      - name: Setup Docker cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       
       # === BUILD PHASE ===
       - name: Install dependencies
@@ -46,14 +53,6 @@ jobs:
       - name: Setup environment files
         run: |
           cp .env.example .env
-      
-      # === INFRASTRUCTURE PHASE ===
-      - name: Setup Docker cache
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
       
       - name: Setup database and infrastructure
         run: |
