@@ -49,7 +49,7 @@ jobs:
       - name: Install dependencies
         run: |
             if [ ! -d node_modules ]; then
-            npm install
+                npm install
             fi
       
       - name: Setup environment files
