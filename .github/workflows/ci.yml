@@ -47,8 +47,10 @@ jobs:
           restore-keys: ${{ runner.os }}-node-
 
       - name: Install dependencies
-        if: ${{ !exists('node_modules') }}
-        run: npm ci --prefer-offline --no-audit
+        run: |
+            if [ ! -d node_modules ]; then
+            npm install
+            fi
       
       - name: Setup environment files
         run: |
