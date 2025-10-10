@@ -54,6 +54,17 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "lgtm-com[bot]",
+      "name": "lgtm-com[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/17324?v=4",
+      "profile": "https://github.com/apps/lgtm-com",
+      "contributions": [
+        "bug",
+        "code",
+        "maintenance"
+      ]
     }
   ]
 }
