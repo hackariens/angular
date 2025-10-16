@@ -40,6 +40,7 @@ tasks:
     - task: lint:md
       vars:
         IGNORE_DIR: "taskfiles"
+    - docker compose -f {{.DOCKERCOMPOSEFILE}} config 1>/dev/null
 
   info:
     desc: "Affiche les informations du projet avec les variables d'environnement"
