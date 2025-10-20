@@ -21,6 +21,9 @@ jobs:
       - name: Setup Docker Compose
         uses: docker/setup-compose-action@v1
       
+      - name: Setup Actionlint
+        uses: rhysd/actionlint-action@v1.3.0
+      
       - name: Setup Task
         uses: go-task/setup-task@v1
       

@@ -33,6 +33,9 @@ tasks:
 
   lint:all:
     desc: "Exécute tous les linters disponibles"
+    preconditions:
+      - sh: command -v actionlint >/dev/null 2>&1
+        msg: "actionlint n'est pas installé. Veuillez l'installer
     cmds:
     - task: lint:yml
       vars:
@@ -41,6 +44,7 @@ tasks:
       vars:
         IGNORE_DIR: "taskfiles"
     - docker compose -f {{.DOCKERCOMPOSEFILE}} config 1>/dev/null
+    - actionlint .github/workflows/ci.yml
 
   info:
     desc: "Affiche les informations du projet avec les variables d'environnement"
