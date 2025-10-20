@@ -22,7 +22,7 @@ jobs:
         uses: docker/setup-compose-action@v1
       
       - name: Setup Actionlint
-        uses: rhysd/actionlint-action@v2
+        uses: raven-actions/actionlint@v2
       
       - name: Setup Task
         uses: go-task/setup-task@v1
