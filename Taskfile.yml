@@ -34,7 +34,7 @@ tasks:
   lint:all:
     desc: "Exécute tous les linters disponibles"
     preconditions:
-      - sh: command -v actionlint >/dev/null 2>&1
+      - sh: command -v actionlint
         msg: "actionlint n'est pas installé. Veuillez l'installer
     cmds:
     - task: lint:yml
