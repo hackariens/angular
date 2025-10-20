@@ -33,9 +33,6 @@ tasks:
 
   lint:all:
     desc: "Exécute tous les linters disponibles"
-    preconditions:
-      - sh: command -v docker
-        msg: "Docker n'est pas installé. Veuillez l'installer"
     cmds:
     - task: lint:yml
       vars:
