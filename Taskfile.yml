@@ -34,7 +34,6 @@ tasks:
   lint:all:
     desc: "Exécute tous les linters disponibles"
     cmds:
-    - yamllint --version
     - task: lint:yml
       vars:
         IGNORE_DIR: "taskfiles"
